@@ -2,9 +2,4 @@
 
 const JSX = <h1>Hello JSX!</h1>;
 
-const MyComponent = () => {
-  return JSX;
-};
-
-const domContainer = document.querySelector('#container');
-ReactDOM.render(<MyComponent />, domContainer);
+ReactDOM.render(JSX, document.querySelector('#container'));

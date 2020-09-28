@@ -1,0 +1,16 @@
+'use strict';
+
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div>
+        <h1>Hello React!</h1>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(<MyComponent />, document.getElementById('challenge-node'));

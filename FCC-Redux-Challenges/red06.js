@@ -19,3 +19,9 @@ const loginAction = () => {
     type: 'LOGIN',
   };
 };
+
+let currentState = store.getState();
+console.log(currentState);
+store.dispatch(loginAction());
+currentState = store.getState();
+console.log(currentState);

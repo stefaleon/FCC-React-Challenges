@@ -34,3 +34,12 @@ const logoutUser = () => {
     type: 'LOGOUT',
   };
 };
+
+let currentState = store.getState();
+console.log('initial state, before login', currentState); // false
+store.dispatch(loginUser());
+currentState = store.getState();
+console.log('after login', currentState); // true
+store.dispatch(logoutUser());
+currentState = store.getState();
+console.log('after logout', currentState); // false

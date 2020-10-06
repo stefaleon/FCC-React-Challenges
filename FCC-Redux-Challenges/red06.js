@@ -21,7 +21,7 @@ const loginAction = () => {
 };
 
 let currentState = store.getState();
-console.log(currentState);
+console.log(currentState); // false
 store.dispatch(loginAction());
 currentState = store.getState();
-console.log(currentState);
+console.log(currentState); // true

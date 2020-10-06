@@ -39,3 +39,6 @@ store.subscribe(render);
 
 // render once with the initial state
 render();
+
+// add event listener
+document.addEventListener('click', () => store.dispatch(incAction()));
